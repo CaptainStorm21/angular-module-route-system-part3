@@ -5,6 +5,16 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {
+    path: 'elements',
+    loadChildren: () =>
+        import ('./elements/elements.module').then(m=>m.ElementsModule)
+  },
+  {
+    path: 'collections',
+    loadChildren: () =>
+        import ('./collections/collections.module').then(m=>m.CollectionsModule)
+  },
+  {
     path: '',
     component: HomeComponent
   },
@@ -20,5 +30,9 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-// ** indicates that it is a wild card - any component that does not exist will render as ** !-->
 
+
+
+/*
+line 7 through 16 are lazy loading . the component will not load until it is called
+*/

@@ -4,7 +4,7 @@ import { ElementsHomeComponent } from './elements-home/elements-home.component';
 
 const routes: Routes = [
   {
-    path: 'elements',
+    path: '',
     component: ElementsHomeComponent
   }
 ];
@@ -17,6 +17,6 @@ export class ElementsRoutingModule { }
 
 /*
 line 7 and 8
-any time a user goes to /elements, load elements component
-http://localhost:
+I removed a module name from path because in lazy loading ,
+each route is relative to the path that's specified in the AppRoutingModule
 */
