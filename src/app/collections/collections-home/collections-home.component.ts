@@ -13,18 +13,21 @@ export class CollectionsHomeComponent implements OnInit {
       age: 34,
       job: 'Designer',
       employed: true,
+      company: 'Warner Bros'
     },
     {
       name: 'Anna',
       age: 24,
       job: 'Lawyer',
       employed: true,
+      company: 'Sony'
     },
     {
       name: 'Mary',
       age: 18,
       job: 'Student',
-      employed: true,
+      employed: false,
+      company: '',
     }
   ];
 
