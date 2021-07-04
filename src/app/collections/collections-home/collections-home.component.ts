@@ -11,17 +11,20 @@ export class CollectionsHomeComponent implements OnInit {
     {
       name: 'Julie',
       age: 34,
-      job: 'Designer'
+      job: 'Designer',
+      employed: true,
     },
     {
       name: 'Anna',
       age: 24,
-      job: 'Lawyer'
+      job: 'Lawyer',
+      employed: true,
     },
     {
       name: 'Mary',
       age: 18,
-      job: 'Student'
+      job: 'Student',
+      employed: true,
     }
   ];
 
@@ -38,6 +41,10 @@ export class CollectionsHomeComponent implements OnInit {
       key: 'job',
       label: 'Job'
     },
+    {
+      key: 'employed',
+      label: 'Has a Job?!'
+    }
 
   ]
   constructor() { }

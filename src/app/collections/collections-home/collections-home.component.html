@@ -2,7 +2,9 @@
   <app-divider>
     Table Component
   </app-divider>
-  <div class="row">
-    <app-table></app-table>
+  <div class="card p-2">
+    <div class="row">
+      <app-table [data]="data" [headers]="headers" classNames="table table-sm table-responsive "></app-table>
+    </div>
   </div>
 </div>
