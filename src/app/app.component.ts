@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular Module Route System Part 2' ;
+  title = 'Angular Module Route System Part 3' ;
 }
